@@ -1,0 +1,63 @@
+/*------------------------------------*\
+	$GENERAL
+\*------------------------------------*/
+
+a, input, textarea, select {
+	outline: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ol {
+	list-style-position: inside;
+	padding: 0;
+	margin: 0;
+}
+address {
+	font-style: normal;
+}
+@for $i from 1 through 6 {
+	h#{$i} {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+
+/* $clearfix */
+
+@mixin cf {
+	*zoom: 1;
+	&:before, &:after {
+		content: " ";
+		display: table;
+	};
+	&:after {
+		clear: both;
+	};
+}
+.cf {
+	@include cf;
+}
+article, section, header, footer {
+	@include cf;
+}
+
+/*------------------------------------*\
+	$MIXINS
+\*------------------------------------*/
+
+@mixin gradient($top, $bottom) {
+	background: $top;
+	background: -webkit-linear-gradient($top, $bottom);
+	background: -moz-linear-gradient($top, $bottom);
+	background: -o-linear-gradient($top, $bottom);
+	background: -ms-linear-gradient($top, $bottom);
+	background: linear-gradient($top, $bottom);
+}

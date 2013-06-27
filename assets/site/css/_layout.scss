@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+body {
+	
+}
+
+/* $layout-wrapper */
+
+.layout-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* $header */
+
+.page-header {
+	margin-bottom: $gutter;	
+}
+
+/* $main-content */
+
+.main-content {
+	margin-bottom: $gutter;	
+}
+
+
+/* $footer */
+
+.page-footer {
+
+}
+
+/* $navigation */
+
+.site-nav {
+
+}
+	.site-nav__item {
+
+	}
+	.site-nav__sub-nav {
+
+	}
+		.sub-nav__item {
+
+		}
+
+/*------------------------------------*\
+    $MODIFIERS
+\*------------------------------------*/
+
+.push--right {
+	float: right;
+}
+.pull--left {
+	float: left;
+}
