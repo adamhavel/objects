@@ -21,12 +21,7 @@ a {
 .heading {
 	margin-bottom: $line-height/4;
 }
-.heading--aloof {
-	margin-bottom: $line-height/2;
-}
-.heading--main {
-	margin-bottom: $line-height;
-}
+
 .alpha {
 	font-size: 32px;
 	font-size: 2rem;
@@ -66,10 +61,7 @@ a {
 
 /* $media */
 
-.media {
-	margin-bottom: $line-height;
-}
-.media--thumb {}
+.media {}
 .media--left {
 	float: left;
 	margin: .3em 1em 0 0;
@@ -85,32 +77,30 @@ a {
 
 /* $block-list */
 
-.block-list {
+.block-list,
+.bullet-list {
 	margin-bottom: $line-height;
 }
 	.block-list__item {
-		padding-bottom: .3em;
+		display: block;
+		margin-bottom: $line-height/5;
 		&:last-child {
-			padding-bottom: 0;
+			margin-bottom: 0;
 		};
-		.block-list--bullets > & {
-			padding-left: 15px;
-			background: url('../img/block-list--bullets__item-bg.png') 0 2px no-repeat;
+		.bullet-list > & {
+			padding-left: 1em;
+			background: url('../img/') 0 0 no-repeat;
 		};
 	}
-	.sub-list {
-		margin: .3em 0 $line-height/2 0; 
-	}	
 
 /* $inline-list */
 
-.inline-list {
-	margin-bottom: $line-height;
-}
+.inline-list,
+.pipe-list {}
 	.inline-list__item {
 		display: inline-block;
 		vertical-align: top;
-		.inline-list--pipes & {
+		.pipe-list & {
 			&:before {
 				content: ' | ';
 			};
@@ -124,10 +114,16 @@ a {
     $MODIFIERS
 \*------------------------------------*/
 
+.aloof {
+	margin-bottom: $line-height/2;
+}
+.timid {
+	margin: $line-height;
+}
 .island {
 	margin: 2*$line-height 0;
 }
-.island--small {
+.islet {
 	margin: $line-height 0;
 }
 .centered {
@@ -136,7 +132,7 @@ a {
 .set-right {
 	text-align: right;
 }
-.spread-list {
+.spread {
 	text-align: justify;
 	line-height: 0;
 	&.inline-list {

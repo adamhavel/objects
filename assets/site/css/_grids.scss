@@ -96,7 +96,7 @@ $use-silent-classes:    false!default;
 /**
  * Would you like push and pull classes enabled?
  */
-$push:                  true!default;
+$push:                  false!default;
 $pull:                  false!default;
 
 
@@ -121,10 +121,10 @@ $use-markup-fix:        true!default;
  * that the breakpoint fires at.
  */
 $breakpoints: (
-    'palm' '(max-width: 480px)',
-    'lap' '(min-width: 481px) and (max-width: 1023px)',
-    'portable' '(max-width: 1023px)',
-    'desk' '(min-width: 1024px)'
+    'palm' $palm,
+    'lap' $lap,
+    'portable' $portable,
+    'desk' $desk
 )!default;
 
 

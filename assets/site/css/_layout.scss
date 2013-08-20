@@ -18,6 +18,7 @@ body {
 .page-header {
 	margin-bottom: $gutter;	
 }
+	.site-logo {}
 
 /* $main-content */
 
@@ -28,24 +29,12 @@ body {
 
 /* $footer */
 
-.page-footer {
-
-}
+.page-footer {}
 
 /* $navigation */
 
-.site-nav {
-
-}
-	.site-nav__item {
-
-	}
-	.site-nav__sub-nav {
-
-	}
-		.sub-nav__item {
-
-		}
+.site-nav {}
+	.site-nav__item {}
 
 /*------------------------------------*\
     $MODIFIERS
