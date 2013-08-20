@@ -2,24 +2,17 @@
 	$GENERAL
 \*------------------------------------*/
 
-a, input, textarea, select {
-	outline: 0;
-}
-p {
+body, p, ul, ol {
 	margin: 0;
 	padding: 0;
 }
 ul {
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
 }
 ol {
 	list-style-position: inside;
-	padding: 0;
-	margin: 0;
 }
-address {
+address, em {
 	font-style: normal;
 }
 @for $i from 1 through 6 {
@@ -28,7 +21,6 @@ address {
 		padding: 0;
 	}
 }
-
 
 /* $clearfix */
 
