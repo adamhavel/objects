@@ -77,38 +77,52 @@ a {
 
 /* $block-list */
 
-.block-list,
-.bullet-list {
-	margin-bottom: $line-height;
-}
-	.block-list__item {
+.block-list {
+	li {
 		display: block;
 		margin-bottom: $line-height/5;
 		&:last-child {
 			margin-bottom: 0;
 		};
-		.bullet-list > & {
-			padding-left: 1em;
-			background: url('../img/') 0 0 no-repeat;
+	};
+}
+.bullet-list {
+	@extend .block-list;
+	li {
+		padding-left: $line-height;
+		background: {
+			image: ;
+			position: 0 $line-height/3;
+			repeat: no-repeat;
+			size: $line-height/3;
 		};
 	}
+}
 
 /* $inline-list */
 
-.inline-list,
-.pipe-list {}
-	.inline-list__item {
+.inline-list {
+	li {
 		display: inline-block;
-		vertical-align: top;
-		.pipe-list & {
-			&:before {
-				content: ' | ';
-			};
-			&:first-child:before {
-				display: none;
-			};
+		vertical-align: middle;
+		margin-left: .5em;
+		&:first-child {
+			margin-left: 0;
 		};
-	}
+	};
+}
+.pipe-list {
+	li {
+		display: inline-block;
+		vertical-align: top;	
+		&:before {
+			content: ' | ';
+		};
+		&:first-child:before {
+			display: none;
+		};
+	}	
+}
 
 /*------------------------------------*\
     $MODIFIERS
