@@ -11,7 +11,7 @@
 	<script>
 		$(document).ready(function() {
 
-			$('.coin__shape').bind('click', function() {
+			$('.coin').bind('click', function() {
 				$(this).toggleClass('flipped');
 			});
 
@@ -20,11 +20,11 @@
 </head>
 <body>
 
-	<div class="coin">
+	<div class="laid coin object">
 		<div class="coin__shape">
 			<div class="coin__side front"></div>
 			<div class="coin__side back"></div>
-			<div class="coin__edge">
+			<div class="coin__edge" data-facets="16">
 				<div class="edge__facet f--1"></div>
 				<div class="edge__facet f--2"></div>
 				<div class="edge__facet f--3"></div>
@@ -43,7 +43,7 @@
 				<div class="edge__facet f--16"></div> 
 			</div>
 		</div>
-		<div class="coin__shadow"></div>
+		<div class="object__shadow"></div>
 	</div>
 
 </body>
